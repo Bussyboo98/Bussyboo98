@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+}
+.home-container {
+  height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(90deg, #4e4c85, #10125a);
+  overflow-x: scroll;
+  scroll-snap-type: y mandatory;
+}
+.home-slide {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+@media screen and (min-width: 480px) {
+  
+}
+
+/* Slide 1 */
+
+.home-rocket {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 4;
+  opacity: 0.4;
+  animation: rocket-animate 3s linear infinite;
+  animation-fill-mode: backwards;
+}
+.home-rocket:nth-child(2) {
+  left: 25%;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+.home-rocket:nth-child(3) {
+  left: 45%;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+.home-rocket:nth-child(4) {
+  left: 70%;
+  animation-duration: 4s;
+  animation-delay: 4s;
+}
+@keyframes rocket-animate {
+  0% {transform: translateY(150vh)}
+  100% {transform: translateY(-150vh)}
+}
+.home-background {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0.3;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+}
+.home-slide-1 p {
+  font-size: 2em;
+  font-family: "Audiowide";
+  margin-top: 60%;
+  color: white;
+  z-index: 5;
+}
+.home-slide-1 .home-intro {
+  color: white;
+  margin-top: 5%;
+  margin-top: 5%;
+  margin-left: 5px;
+  font-size: 1.2em;
+  line-height: 50px;
+}
+@media screen and (min-width: 480px) {
+  .home-rocket:nth-child(3) {
+    animation-duration: 2s;
+    animation-delay: 4s;
+  }
+  .home-background {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+  }
+  .home-slide-1 p {
+    font-size: 4em;
+    font-family: "Audiowide";
+  }
+  .home-slide-1 .home-intro {
+    color: white;
+    font-size: 2em;
+    line-height: 60px;
+  }
+}
+
+/* Slide 2 */
+
+.home-slide-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-slide-2 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.3;
+  z-index: 3;
+}
+.home-star {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+  z-index: 7;
+  animation: star-animate 3s linear infinite;
+}
+@keyframes star-animate {
+  0% {transform: translate(150vh, -150vh)}
+  100% {transform: translate(-150vh, 150vh)}
+}
+.home-slide-2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.3) inset;
+  border-radius: 100px;
+  z-index: 5;
+}
+.home-slide-2 p {
+  font-size: 0.9em;
+  font-family: Audiowide;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+}
+@media screen and (min-width: 480px) {
+  .home-slide-2 div {
+    width: 850px;
+    height: 850px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.3) inset;
+    border-radius: 100px;
+  }
+  .home-slide-2 p {
+    font-size: 2.5em;
+    line-height: 60px;
+  }
+}
+
+/* Slide 3 */
+
+.home-slide-3 p {
+  color: white;
+  font-size: 2em;
+  font-family: Audiowide;
+  text-align: center;
+  margin-top: 15%;
+}
+.home-slide-3 div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  width: 100%;
+  height: calc(90% / 3.5);
+}
+.home-slide-3 div img {
+  width: 80%;
+  height: 60%;
+}
+.react-svg {
+  width: 150px;
+  height: 150px;
+}
+.gatsby-svg {
+  width: 130px;
+  height: 130px;
+}
+.figma-svg {
+  width: 150px;
+  height: 150px;
+}
+@media screen and (min-width: 480px) {
+  .home-slide-3 p {
+    font-size: 3em;
+  }
+  .react-svg {
+    width: 300px;
+    height: 300px;
+  }
+  .gatsby-svg {
+    width: 250px;
+    height: 250px;
+  }
+  .figma-svg {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Slide 4 */
+
+.home-slide-4 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.home-slide-4-intro {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 100%;
+  color: white;
+  font-size: 2em;
+  font-family: Audiowide;
+  text-align: center;
+  margin-top: 8%;
+  transform: translate(-50%, -5%);
+}
+.home-projects {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+  width: 95%;
+  height: 50%;
+  margin: auto;
+  overflow-x: scroll;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.2), 0 0 10px rgba(255, 0, 255, 0.2);
+  scroll-snap-type: x mandatory;
+  z-index: 8;
+}
+.home-projects a {
+  display: inline-block;
+  position: relative;
+  height: 80%;
+  min-width: 90%;
+  border-width: 5px;
+  border-radius: 20px;
+  margin: 0 5%;
+  scroll-snap-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 10px rgba(255, 255, 255, 0.2), 0 0 10px rgba(255, 255, 255, 0.5) inset ;
+}
+.home-projects a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-sizing: border-box;
+  filter: brightness(70%);
+}
+.home-projects a p {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background: black;
+  padding: 10px;
+  font-size: 1.5em;
+  font-family: Sofia;
+  text-align: center;
+  border-radius: 20px;
+  opacity: 1;
+  text-shadow: 0 0 2px white, 0 0 4px deepskyblue, 0 0 6px deepskyblue;
+}
+@media screen and (min-width: 480px) {
+  .home-slide-4-intro {
+    font-size: 3em;
+    margin-top: 20%;
+  }
+}
+
+/* Slide 5 */
+.home-slide-5-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+.home-contact {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 3em;
+  font-family: Audiowide;
+  z-index: 8;
+}
+.home-phone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 0.7em;
+  font-family: Audiowide;
+  z-index: 8;
+}
+.home-email {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 0.7em;
+  font-family: Audiowide;
+  z-index: 8;
+}
+@media screen and (min-width: 480px) {
+  .home-contact {
+    font-size: 5em;
+  }
+  .home-phone, .home-email {
+    font-size: 1.5em;
+  }
+}

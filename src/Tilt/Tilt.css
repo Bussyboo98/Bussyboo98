@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.tilt-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  background: black;
+}
+.tilt-object {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+ /* background: aqua; */
+  animation: tilt-object-animate 20s ease-in-out 5.5s infinite;
+}
+.tilt-object div {
+  width: 26px;
+  height: 26px;
+  border: 3px solid black;
+  border-radius: 50%;
+  opacity: 0.2;
+  box-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black;
+  animation: tilt-object-animate 20s ease-in-out 5.5s infinite;
+}
+
+@keyframes tilt-object-animate {
+  0% {
+    background: aqua;
+    box-shadow: 0 0 60px aqua, 0 0 80px aqua, 0 0 100px aqua, 0 0 120px aqua, 0 0 140px aqua, 0 0 160px aqua, 0 0 180px aqua, 0 0 200px aqua;
+  }
+  6.6% {
+    background: aquamarine;
+    box-shadow: 0 0 60px aquamarine, 0 0 80px aquamarine, 0 0 100px aquamarine, 0 0 120px aquamarine, 0 0 140px aquamarine, 0 0 160px aquamarine, 0 0 180px aquamarine, 0 0 200px aquamarine;
+  }
+ 13.2% {
+    background: azure;
+    box-shadow: 0 0 60px azure, 0 0 80px azure, 0 0 100px azure, 0 0 120px azure, 0 0 140px azure, 0 0 160px azure, 0 0 180px azure, 0 0 200px azure;
+  }
+  19.8% {
+    background: blue;
+    box-shadow: 0 0 60px blue, 0 0 80px blue, 0 0 100px blue, 0 0 120px blue, 0 0 140px blue, 0 0 160px blue, 0 0 180px blue, 0 0 200px blue;
+  }
+  26.4% {
+    background: blueviolet;
+    box-shadow: 0 0 60px blueviolet, 0 0 80px blueviolet, 0 0 100px blueviolet, 0 0 120px blueviolet, 0 0 140px blueviolet, 0 0 160px blueviolet, 0 0 180px blueviolet, 0 0 200px blueviolet;
+  }
+  33% {
+    background: cyan;
+    box-shadow: 0 0 60px cyan, 0 0 80px cyan, 0 0 100px cyan, 0 0 120px cyan, 0 0 140px cyan, 0 0 160px cyan, 0 0 180px cyan, 0 0 200px cyan;
+  }
+  39.6% {
+    background: deepskyblue;
+    box-shadow: 0 0 60px deepskyblue, 0 0 80px deepskyblue, 0 0 100px deepskyblue, 0 0 120px deepskyblue, 0 0 140px deepskyblue, 0 0 160px deepskyblue, 0 0 180px deepskyblue, 0 0 200px deepskyblue;
+  }
+  46.2% {
+    background: fuchsia;
+    box-shadow: 0 0 60px fuchsia, 0 0 80px fuchsia, 0 0 100px fuchsia, 0 0 120px fuchsia, 0 0 140px fuchsia, 0 0 160px fuchsia, 0 0 180px fuchsia, 0 0 200px fuchsia;
+  }
+  52.8% {
+    background: gold;
+    box-shadow: 0 0 60px gold, 0 0 80px gold, 0 0 100px gold, 0 0 120px gold, 0 0 140px gold, 0 0 160px gold, 0 0 180px gold, 0 0 200px gold;
+  }
+  59.8% {
+    background: greenyellow;
+    box-shadow: 0 0 60px greenyellow, 0 0 80px greenyellow, 0 0 100px greenyellow, 0 0 120px greenyellow, 0 0 140px greenyellow, 0 0 160px greenyellow, 0 0 180px greenyellow, 0 0 200px greenyellow;
+  }
+  66% {
+    background: orange;
+    box-shadow: 0 0 60px orange, 0 0 80px orange, 0 0 100px orange, 0 0 120px orange, 0 0 140px orange, 0 0 160px orange, 0 0 180px orange, 0 0 200px orange;
+  }
+  72.6% {
+    background: pink;
+    box-shadow: 0 0 60px pink, 0 0 80px pink, 0 0 100px pink, 0 0 120px pink, 0 0 140px pink, 0 0 160px pink, 0 0 180px pink, 0 0 200px pink;
+  }
+  79.2% {
+    background: plum;
+    box-shadow: 0 0 60px plum, 0 0 80px plum, 0 0 100px plum, 0 0 120px plum, 0 0 140px plum, 0 0 160px plum, 0 0 180px plum, 0 0 200px plum;
+  }
+  85.8% {
+    background: red;
+    box-shadow: 0 0 60px red, 0 0 80px red, 0 0 100px red, 0 0 120px red, 0 0 140px red, 0 0 160px red, 0 0 180px red, 0 0 200px red;
+  }
+  92.4% {
+    background: yellow;
+    box-shadow: 0 0 60px yellow, 0 0 80px yellow, 0 0 100px yellow, 0 0 120px yellow, 0 0 140px yellow, 0 0 160px yellow, 0 0 180px yellow, 0 0 200px yellow;
+  }
+  100% {
+    background: aqua;
+    box-shadow: 0 0 60px aqua, 0 0 80px aqua, 0 0 100px aqua, 0 0 120px aqua, 0 0 140px aqua, 0 0 160px aqua, 0 0 180px aqua, 0 0 200px aqua;
+  }
+}
+.tilt-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  margin: auto;
+  color: white;
+  opacity: 1;
+  text-shadow: 0 0 60px deepskyblue, 0 0 20px deepskyblue, 0 0 30px deepskyblue;
+  transform: translate(-50%, -50%);
+  animation: text-animate 3s ease-out 2s both;
+}
+@keyframes text-animate {
+  0% { opacity: 1; }
+  70% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+h1 {
+  color: grey;
+  opacity: 0.3;
+}
